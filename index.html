@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Ortiz Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background: #f4f4f9; }
+
+    /* Header */
+    header { background: #1f2937; color: white; padding: 3rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; margin-bottom: 1rem; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #10b981; }
+
+    /* Section */
+    section { padding: 4rem 1rem; max-width: 1100px; margin: auto; }
+    h2 { color: #1f2937; font-size: 2rem; margin-bottom: 2rem; border-bottom: 2px solid #10b981; display: inline-block; padding-bottom: 0.5rem; }
+
+    /* Projects Grid */
+    .projects { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    .project { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .project:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+    .project-content { padding: 1rem; }
+    .project-content h3 { margin-bottom: 0.5rem; color: #111827; }
+    .project-content p { margin-bottom: 1rem; }
+    .project-content a { text-decoration: none; color: #10b981; font-weight: bold; }
+    .project-content a:hover { text-decoration: underline; }
+
+    /* Screenshot container for desktop + mobile */
+    .screenshots { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .screenshots img { 
+      width: 48%; 
+      height: auto; 
+      object-fit: contain;
+      border-radius: 8px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+      max-height: 400px; /* Prevents images from becoming too tall */
+    }
+
+    /* Resume */
+    .resume, .contact { background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+
+    .resume ul { margin-top: 1rem; list-style-type: disc; padding-left: 1.5rem; }
+
+    /* Contact */
+    .contact a { color: #10b981; text-decoration: none; font-weight: bold; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer { text-align: center; padding: 2rem 1rem; color: #6b7280; font-size: 0.9rem; }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .screenshots img { width: 100%; }
+    }
+
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 0.5rem 0; }
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Intro -->
+  <header>
+    <h1>Michael Ortiz</h1>
+    <p>Web Developer & QA Specialist | Building clean, functional websites with a focus on quality</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Portfolio</h2>
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="project">
+        <div class="screenshots">
+          <img src="images/flexFitnessD.png" alt="Flex Fitness Desktop">
+          <img src="images/flexFitnessM.png" alt="Flex Fitness Mobile">
+        </div>
+        <div class="project-content">
+          <h3>Flex Fitness with Chanel</h3>
+          <p>Responsive fitness site for a personal trainer, showing both desktop and mobile versions to highlight adaptability.</p>
+          <a href="#">View Site</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <div class="screenshots">
+          <img src="images/poppablesD.png" alt="Sticker Shop Desktop">
+          <img src="images/poppablesM.png" alt="Sticker Shop Mobile">
+        </div>
+        <div class="project-content">
+          <h3>Sticker Shop</h3>
+          <p>E-commerce site for selling stickers, displaying desktop and mobile versions to showcase responsive design.</p>
+          <a href="#">View Site</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Resume / QA Section -->
+  <section id="resume">
+    <h2>Resume & QA Experience</h2>
+    <div class="resume">
+      <p><strong>Summary:</strong> Experienced QA specialist and web developer, focused on delivering quality websites and reliable digital experiences.</p>
+      <p><strong>Skills:</strong> Web Development (HTML, CSS, JavaScript, AI-assisted tools), QA & Testing, Attention to Detail, Problem Solving</p>
+      <p><strong>Experience Highlights:</strong></p>
+      <ul>
+        <li>QA Specialist: Manual testing, bug tracking, ensuring product quality</li>
+        <li>Web Projects: Built sites for small businesses and e-commerce</li>
+      </ul>
+      <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>Open to freelance projects or QA consulting opportunities. Let’s connect!</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Michael Ortiz
+  </footer>
+
+</body>
+</html>
