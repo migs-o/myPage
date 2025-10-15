@@ -78,8 +78,9 @@ h2::after {
   border-radius:2px;
 }
 
-section:nth-of-type(even) {
-  background:linear-gradient(to right, #f9fafb, #eef2f7);
+/* Optional: subtle gradient only for projects section */
+section#projects {
+  background: linear-gradient(to right, #f9fafb, #eef2f7);
   border-radius:12px;
 }
 
@@ -95,7 +96,7 @@ section:nth-of-type(even) {
 .project:hover { transform:translateY(-6px); box-shadow:0 12px 30px rgba(0,0,0,0.15); }
 .screenshots {
   display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;
-  background:#f8fafc;
+  /* remove background to keep clean */
 }
 .screenshots img {
   width:48%; max-height:400px;
@@ -125,33 +126,12 @@ section:nth-of-type(even) {
   border-radius:16px;
   box-shadow:0 8px 24px rgba(0,0,0,0.08);
 }
-.resume strong { color:#1f2937; }
-.contact a {
-  color:#10b981; text-decoration:none; font-weight:bold;
-}
+.resume p { margin:1rem 0; }
+.resume ul { margin:0.5rem 0 1.5rem 1.5rem; list-style-type:disc; padding-left:1.5rem; }
+.resume ul ul { margin:0.5rem 0 0.5rem 1.5rem; list-style-type:circle; }
+.resume strong { color:#1f2937; font-weight:600; }
+.contact a { color:#10b981; text-decoration:none; font-weight:bold; }
 .contact a:hover { text-decoration:underline; }
-
-/* Fix spacing for resume content */
-.resume p {
-  margin: 1rem 0;
-}
-
-.resume ul {
-  margin: 0.5rem 0 1.5rem 1.5rem;
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.resume ul ul {
-  margin: 0.5rem 0 0.5rem 1.5rem;
-  list-style-type: circle;
-}
-
-.resume strong {
-  color: #1f2937;
-  font-weight: 600;
-}
-
 
 /* ===== Scroll to top ===== */
 #toTop {
