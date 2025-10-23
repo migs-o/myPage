@@ -48,7 +48,7 @@
   <header class="bg-white shadow fixed w-full z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
       <h1 class="flex items-center">
-        <img src="logolas.png" alt="LasDalias Logo" class="h-16 md:h-20">
+        <div class="h-16 md:h-20 w-48 bg-gray-200 flex items-center justify-center text-gray-500">[Logo Placeholder]</div>
       </h1>
       
       <!-- Desktop Nav -->
@@ -108,19 +108,18 @@
     }
   </script>
 
-<!-- HERO -->
-<section class="relative h-[70vh] flex items-center justify-center text-white overflow-hidden">
-  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
-    <source src="Las_Dalias_Vimeo720p30.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-  <div class="relative text-center px-4 z-10" data-aos="fade-up">
-    <h2 class="text-4xl md:text-6xl font-bold mb-4">Authentic Mexican Flavor</h2>
-    <p class="text-lg mb-6">Family-owned. Fresh ingredients.</p>
-    <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full">Visit Us</a>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="relative h-[70vh] flex items-center justify-center text-white overflow-hidden">
+    <div class="absolute w-full h-full bg-gray-300 flex items-center justify-center">
+      <p class="text-gray-600 text-xl">[Hero Video Placeholder]</p>
+    </div>
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative text-center px-4 z-10" data-aos="fade-up">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Authentic Mexican Flavor</h2>
+      <p class="text-lg mb-6">Family-owned. Fresh ingredients.</p>
+      <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full">Visit Us</a>
+    </div>
+  </section>
 
   <!-- MEXICAN PATTERN DIVIDER -->
   <div class="relative h-4 bg-gradient-to-r from-red-600 via-orange-500 to-red-600">
@@ -137,8 +136,9 @@
         <p class="section-text text-lg">Stop in for a quick meal or stay awhile — you'll always be greeted with a smile and a plate full of flavor.</p>
         <a href="#contact" class="inline-block mt-6 bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full font-semibold shadow-md">MENU</a>
       </div>
-      <img src="shrimp.jpg" 
-           alt="About Us" class="rounded-2xl shadow-lg" data-aos="fade-left">
+      <div class="bg-gray-200 rounded-2xl shadow-lg flex items-center justify-center h-64" data-aos="fade-left">
+        <span class="text-gray-500">[About Us Image]</span>
+      </div>
     </div>
   </section>
 
@@ -150,8 +150,9 @@
   <!-- CATERING -->
   <section id="catering" class="py-24 bg-cream">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4">
-      <img src="plates.jpg" 
-           alt="Catering" class="rounded-2xl shadow-lg" data-aos="fade-right">
+      <div class="bg-gray-200 rounded-2xl shadow-lg flex items-center justify-center h-64" data-aos="fade-right">
+        <span class="text-gray-500">[Catering Image]</span>
+      </div>
       <div data-aos="fade-left">
         <h2 class="section-title text-5xl md:text-6xl font-bold text-red-600 mb-6">Catering</h2>
         <p class="section-text mb-4 text-lg">Check out our house specials and give yourself the taste of Mexico!</p>
@@ -169,38 +170,50 @@
     </div>
   </section>
 
-  <!-- Lightbox Modal -->
+  <!-- Lightbox Modal (Disabled) -->
   <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
     <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-4xl hover:text-red-400">&times;</button>
-    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] object-contain">
+    <div class="text-white text-center">
+      <p>Image preview disabled in placeholder mode</p>
+    </div>
   </div>
 
   <!-- IMAGE MOSAIC -->
   <section class="py-12 bg-cream">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
-        <img src="bacon.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('bacon.jpg')">
-        <img src="beef.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('beef.jpg')">
-        <img src="cheese.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('cheese.jpg')">
-        <img src="glass.jpg" alt="Drinks" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('glass.jpg')">
-        <img src="guy.jpg" alt="Restaurant" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('guy.jpg')">
-        <img src="player.jpg" alt="Restaurant" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('player.jpg')">
-        <img src="rang.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('rang.jpg')">
-        <img src="rice.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('rice.jpg')">
-        <img src="sauce.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('sauce.jpg')">
-        <img src="scrimp.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('scrimp.jpg')">
-        <img src="slice.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('slice.jpg')">
-        <img src="steak.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('steak.jpg')">
-        <img src="tada.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg shadow-md hover:opacity-90 cursor-pointer" onclick="openLightbox('tada.jpg')">
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 1]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 2]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 3]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 4]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 5]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 6]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 7]</span>
+        </div>
+        <div class="w-full h-48 bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
+          <span class="text-gray-500 text-sm">[Image 8]</span>
+        </div>
       </div>
     </div>
   </section>
 
   <script>
-    function openLightbox(src) {
+    // Lightbox functions disabled in placeholder mode
+    function openLightbox() {
       const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      lightboxImg.src = src;
       lightbox.classList.remove('hidden');
       lightbox.classList.add('flex');
       document.body.style.overflow = 'hidden';
@@ -212,16 +225,6 @@
       lightbox.classList.remove('flex');
       document.body.style.overflow = 'auto';
     }
-
-    // Close when clicking outside the image
-    document.getElementById('lightbox').addEventListener('click', function(e) {
-      if (e.target === this) closeLightbox();
-    });
-
-    // Close with Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeLightbox();
-    });
   </script>
 
   <!-- MEXICAN PATTERN DIVIDER 3 -->
@@ -234,8 +237,9 @@
     <div class="max-w-5xl mx-auto text-center px-4" data-aos="fade-up">
       <h2 class="section-title text-5xl md:text-6xl font-bold text-red-600 mb-8">Private Parties</h2>
       <p class="section-text mb-6 text-lg">Host your next celebration with us! Enjoy our festive atmosphere and delicious food with friends and family.</p>
-      <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80" 
-           class="rounded-2xl shadow-lg mx-auto mb-6 max-w-lg w-full" alt="Private Parties">
+      <div class="bg-gray-200 rounded-2xl shadow-lg mx-auto mb-6 max-w-lg w-full h-64 flex items-center justify-center">
+        <span class="text-gray-500">[Private Parties Image]</span>
+      </div>
       <a href="#contact" class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full font-semibold shadow-md">Book a Party</a>
     </div>
   </section>
@@ -379,12 +383,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <h4 class="text-white font-bold text-lg mb-4">Locations</h4>
         <div class="mb-4">
           <p class="font-semibold text-orange-400">LAKEWOOD</p>
-          <p class="text-sm">7800 West Jewell Avenue</p>
+          <p class="text-sm">1234 West Jewell Avenue</p>
           <p class="text-sm">Lakewood, CO 80232</p>
         </div>
         <div>
           <p class="font-semibold text-orange-400">LITTLETON</p>
-          <p class="text-sm">10143 Chatfield Ave</p>
+          <p class="text-sm">1234 Chatfield Ave</p>
           <p class="text-sm">Littleton, CO 80127</p>
         </div>
       </div>
@@ -414,13 +418,13 @@ document.addEventListener('DOMContentLoaded', function() {
       <!-- Contact us -->
       <div>
         <h4 class="text-white font-bold text-lg mb-4">Contact us</h4>
-        <p class="text-sm mb-2">📞 (303)-988-0889</p>
-        <p class="text-sm"><a href="mailto:adrianvazquez82@gmail.com" class="hover:text-orange-400">adrianvazquez82@gmail.com</a></p>
+        <p class="text-sm mb-2">📞 (303)-xxx-xxxx</p>
+        <p class="text-sm"><a href="mailto:adrianvazquez82@gmail.com" class="hover:text-orange-400">xxxx@gmail.com</a></p>
       </div>
     </div>
     
     <div class="text-center mt-8 pt-8 border-t border-gray-700">
-      <p class="text-sm text-gray-500">© 2025 Las Dalias | Made with ❤️ in Colorado</p>
+      <p class="text-sm text-gray-500">© 2025 Mex Rest | Made with ❤️ in Colorado</p>
     </div>
   </footer>
 
